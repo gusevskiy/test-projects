@@ -1,0 +1,8 @@
+<div *ngIf="expression">I am okay</div>
+
+<div *ngIf="!expression">I am bad</div>
+
+<ng-template [ngTemplateOutlet]="outlet" [ngOutletContext]="context"></ng-template>
+
+
+<button (click)="expression = !expression">Toggle</button>

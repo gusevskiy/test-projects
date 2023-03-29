@@ -8,6 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoryComponent } from './category/category.component';
 import { ReviewComponent } from './components/review/review.component';
+import { BindingComponent } from './components/binding/binding.component';
+import { FormsModule } from '@angular/forms';
+import { FooComponent } from './components/foo/foo.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { ReviewComponent } from './components/review/review.component';
     ProductComponent,
     CategoryComponent,
     ReviewComponent,
-    CommentComponent
+    CommentComponent,
+    BindingComponent,
+    FooComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
