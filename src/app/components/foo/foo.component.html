@@ -1,8 +1,29 @@
-<div *ngIf="expression">I am okay</div>
+<div *ngIf="expression; else: elseCase">I am okay</div>
 
-<div *ngIf="!expression">I am bad</div>
+<!-- <div *ngIf="!expression">I am bad</div> -->
 
-<ng-template [ngTemplateOutlet]="outlet" [ngOutletContext]="context"></ng-template>
+<ng-template #elseCase>
+    <div>I am bad</div>
+</ng-template>
 
 
 <button (click)="expression = !expression">Toggle</button>
+
+<hr>
+
+<button (click)="generateUser()">Generate User</button>
+
+<ul *ngIf="deepObject?.user as user">
+  <li>Name is: {{user.name}}</li>
+  <li>Surname is: {{user.surname}}</li>
+</ul>
+
+<hr>
+
+<ul>
+  <li *ngFor="let user of users; index as i; trackBy: trackBy" [ngSwitch]="user.template">
+    <p *ngSwitchCase="'bold'"><b>{{user.name}}</b></p>
+    <p *ngSwitchCase="'italic'"><i>{{user.name}}</i></p>
+    <p *ngSwitchDefault><span>{{user.name}}</span></p>
+  </li>
+</ul>
