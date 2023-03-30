@@ -1,8 +1,18 @@
 <app-user></app-user>
+<hr>
 <app-product></app-product>
+<hr>
 <app-category></app-category>
+<hr>
 <app-review></app-review>
+<hr>
 <app-comment></app-comment>
+<hr>
 <app-binding></app-binding>
+<hr>
 <app-foo></app-foo>
+<hr>
 <app-doo></app-doo>
+<hr>
+<app-goo [(counter)]="age" [foobar]="'2352353245'" (sayHi)="onSayHi($event)" [title]="expression ? 'one' : 'two'"></app-goo>
+<button (click)="expression = !expression">{{expression ? 'one' : 'two'}}</button>

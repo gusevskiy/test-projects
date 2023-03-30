@@ -12,6 +12,7 @@ import { BindingComponent } from './components/binding/binding.component';
 import { FormsModule } from '@angular/forms';
 import { FooComponent } from './components/foo/foo.component';
 import { DooComponent } from './components/doo/doo.component';
+import { GooComponent } from './components/goo/goo.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DooComponent } from './components/doo/doo.component';
     BindingComponent,
     FooComponent,
     DooComponent,
+    GooComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
