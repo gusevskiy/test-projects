@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { FooComponent } from './components/foo/foo.component';
 import { DooComponent } from './components/doo/doo.component';
 import { GooComponent } from './components/goo/goo.component';
+import { ContentContainerComponent } from './components/content-container/content-container.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { GooComponent } from './components/goo/goo.component';
     FooComponent,
     DooComponent,
     GooComponent,
+    ContentContainerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

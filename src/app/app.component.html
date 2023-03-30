@@ -16,3 +16,12 @@
 <hr>
 <app-goo [(counter)]="age" [foobar]="'2352353245'" (sayHi)="onSayHi($event)" [title]="expression ? 'one' : 'two'"></app-goo>
 <button (click)="expression = !expression">{{expression ? 'one' : 'two'}}</button>
+<hr>
+<app-content-container [template]="ref">
+  <h3 class="header">Header</h3>
+  <p class="body">Boapp-con  <footer class="footer">Footer</footer>
+</app-content-container>
+
+<ng-template #ref let-element>
+  <p>{{element}} I am from App component</p>
+</ng-template>
