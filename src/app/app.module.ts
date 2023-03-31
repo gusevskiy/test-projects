@@ -15,6 +15,8 @@ import { DooComponent } from './components/doo/doo.component';
 import { GooComponent } from './components/goo/goo.component';
 import { ContentContainerComponent } from './components/content-container/content-container.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { MenuComponent } from './components/menu/menu.component';
     GooComponent,
     ContentContainerComponent,
     MenuComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

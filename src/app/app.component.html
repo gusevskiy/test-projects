@@ -54,3 +54,9 @@
     <p>From ap component 3</p>
   </app-menu>
 </div>
+
+<hr>
+
+<button (click)="show = !show">Toggle</button>
+<button (click)="title = title + '1'">Modify input</button>
+<app-parent *ngIf="show" [title]="title"></app-parent>

@@ -9,6 +9,7 @@ export class AppComponent {
   expression = false;
   title = 'test-projects';
   age = 18;
+  show = true;
 
   onSayHi(text: string) {
     console.log(text)
