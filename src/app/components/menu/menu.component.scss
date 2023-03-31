@@ -1,0 +1,11 @@
+:host-context(.hidden) {
+  display: none;
+}
+
+:host {
+  position: relative;
+  .menu {
+    position: absolute;
+    border: 1px solid black;
+  }
+}

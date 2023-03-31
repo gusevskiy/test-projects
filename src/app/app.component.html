@@ -25,3 +25,32 @@
 <ng-template #ref let-element>
   <p>{{element}} I am from App component</p>
 </ng-template>
+
+<hr>
+
+<div>
+  <button (click)="menu1.show()">
+    Open menu
+  </button>
+  <app-menu #menu1>
+    <p>From ap component 1</p>
+  </app-menu>
+</div>
+
+<div>
+  <button (click)="menu2.show()">
+    Open menu
+  </button>
+  <app-menu #menu2>
+    <p>From ap component 2</p>
+  </app-menu>
+</div>
+
+<div>
+  <button (click)="menu3.show()">
+    Open menu
+  </button>
+  <app-menu #menu3>
+    <p>From ap component 3</p>
+  </app-menu>
+</div>
